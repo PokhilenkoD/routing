@@ -1,6 +1,6 @@
 import { Sales } from 'pages/Sales';
 import { Toaster } from 'react-hot-toast';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { GlobalStyle } from './GlobalStyle';
 import { InvoiceDetails } from './InvoiceDetails';
 import { Invoices } from './Invoices';
