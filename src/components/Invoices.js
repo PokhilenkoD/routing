@@ -1,5 +1,5 @@
 import { getInvoices } from 'fakeApi';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import { Box } from './Box';
@@ -40,7 +40,9 @@ export const Invoices = () => {
           </NavItem>
         ))}
       </Box>
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </Box>
   );
 };
